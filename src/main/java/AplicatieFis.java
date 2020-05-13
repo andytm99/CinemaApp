@@ -9,6 +9,8 @@ public class AplicatieFis extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-
+        primaryStage.setTitle("Log In");
+        primaryStage.setScene(LoginMenu.draw());
+        primaryStage.show();
     }
 }

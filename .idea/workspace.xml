@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790dc450-33e4-48b0-86b2-a18c5d879a34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jackson-annotations-2.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jackson-core-2.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jackson-databind-2.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LoginMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AplicatieFis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AplicatieFis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +20,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,21 +35,38 @@
     </option>
   </component>
   <component name="ProjectId" id="1b2MZNDney29VDxe3tSx4qgRDkG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jackson-databind-2.11.0.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="AplicatieFis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AplicatieFis" />
+      <module name="ProiectFis" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AplicatieFis" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,25 +81,54 @@
       <workItem from="1587825802836" duration="1728000" />
       <workItem from="1589190877720" duration="207000" />
       <workItem from="1589191616441" duration="255000" />
-      <workItem from="1589378698500" duration="1475000" />
+      <workItem from="1589378698500" duration="6017000" />
+      <workItem from="1589387341155" duration="325000" />
+      <workItem from="1589387751097" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="455" y="60" key="#Project_Structure" timestamp="1589379288353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="455" y="60" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1589379288353" />
-    <state x="549" y="215" key="FileChooserDialogImpl" timestamp="1589190910834">
+    <state x="549" y="215" key="FileChooserDialogImpl" timestamp="1589383843247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="215" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589190910834" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589190880895">
+    <state x="549" y="215" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589383843247" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589387728189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589190880895" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589387728189" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589387728189">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589387728189" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589387728189">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589387728189" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589387728189">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589387728189" />
+    <state x="582" y="123" key="RollbackChangesDialog" timestamp="1589386222641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589386222641" />
+    <state x="260" y="0" key="SettingsEditor" timestamp="1589383855647">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="260" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589383855647" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589387751067">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589387751067" />
   </component>
 </project>
