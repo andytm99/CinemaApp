@@ -30,7 +30,6 @@ public class LoginMenu {
 
 
         Button loginButton = new Button("Log In");
-        //signUpButton.setOnAction(e ->{});
         GridPane.setConstraints(loginButton,1,2);
 
 
