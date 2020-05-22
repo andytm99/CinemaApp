@@ -23,6 +23,11 @@ public class AdminOverview {
 
         GridPane.setConstraints(TicketsButton,10,7);
 
+        MovieListButton.setOnAction(e -> {
+            AplicatieFis.window.setScene(MovieListView.draw());
+            AplicatieFis.window.setTitle("List of Movies");
+        });
+
 
 
         grid.getChildren().addAll(MovieListButton,TicketsButton);
