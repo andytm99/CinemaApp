@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790dc450-33e4-48b0-86b2-a18c5d879a34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/Customers.JSON" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Managers.JSON" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Alert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoginManagers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SelectionScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AdminOverview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomerOverview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AplicatieFis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AplicatieFis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AplicatieFis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AplicatieFis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginManagers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginManagers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginCustomers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginCustomers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SelectionScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SelectionScreen.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +56,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Andreas\Desktop\proiect\data" />
     </key>
@@ -100,7 +98,8 @@
       <workItem from="1589547584898" duration="2154000" />
       <workItem from="1589549889751" duration="629000" />
       <workItem from="1590078899520" duration="1199000" />
-      <workItem from="1590083900553" duration="982000" />
+      <workItem from="1590083900553" duration="1134000" />
+      <workItem from="1590147729572" duration="914000" />
     </task>
     <servers />
   </component>
@@ -119,26 +118,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589529275319" />
+    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590148045089">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1590148045089" />
     <state x="549" y="215" key="FileChooserDialogImpl" timestamp="1589383843247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="215" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589383843247" />
-    <state width="1493" height="83" key="GridCell.Tab.0.bottom" timestamp="1590084868329">
+    <state width="1493" height="83" key="GridCell.Tab.0.bottom" timestamp="1590148638482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="83" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590084868329" />
-    <state width="1493" height="83" key="GridCell.Tab.0.center" timestamp="1590084868329">
+    <state width="1493" height="83" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590148638482" />
+    <state width="1493" height="83" key="GridCell.Tab.0.center" timestamp="1590148638482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="83" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590084868329" />
-    <state width="1493" height="83" key="GridCell.Tab.0.left" timestamp="1590084868328">
+    <state width="1493" height="83" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590148638482" />
+    <state width="1493" height="83" key="GridCell.Tab.0.left" timestamp="1590148638481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="83" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590084868328" />
-    <state width="1493" height="83" key="GridCell.Tab.0.right" timestamp="1590084868329">
+    <state width="1493" height="83" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590148638481" />
+    <state width="1493" height="83" key="GridCell.Tab.0.right" timestamp="1590148638482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="83" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590084868329" />
+    <state width="1493" height="83" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590148638482" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589533717982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -163,9 +166,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="260" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589526413846" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590083901465">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590147734173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590083901465" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590147734173" />
   </component>
 </project>

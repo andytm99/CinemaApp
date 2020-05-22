@@ -62,7 +62,7 @@ public class LoginManagers {
             }
             if (ok == 1) {
 
-                AplicatieFis.window.setScene(SelectionScreen.draw());
+                AplicatieFis.window.setScene(AdminOverview.draw());
                 AplicatieFis.window.setTitle("Admin Overview");
             } else {
                 Alert.display("EROARE","Username sau parola gresita!");
