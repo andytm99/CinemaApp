@@ -25,7 +25,7 @@ public class AdminOverview {
 
         MovieListButton.setOnAction(e -> {
             AplicatieFis.window.setScene(MovieListView.draw());
-            AplicatieFis.window.setTitle("List of Movies");
+            AplicatieFis.window.setTitle("Movie List");
         });
 
 
