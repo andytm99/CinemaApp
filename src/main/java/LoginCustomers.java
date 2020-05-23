@@ -1,5 +1,5 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.org.apache.bcel.internal.generic.Select;
+import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -49,10 +49,7 @@ public class LoginCustomers {
         GridPane.setConstraints(loginButton,1,2);
         Button SelectScreenButton = new Button("Back");
         GridPane.setConstraints(SelectScreenButton,1,3);
-        SelectScreenButton.setOnAction(e -> {
-            AplicatieFis.window.setScene(SelectionScreen.draw());
-            AplicatieFis.window.setTitle("Selection Screen");
-        });
+        SelectScreenButton.setOnAction(LoginCustomers::handle);
         loginButton.setOnAction(e -> {
                     for (JsonCustomer x : Custom) {
                         if ((x.getUsername().equals(nameInput.getText())) && (x.getPassword().equals(passInput.getText()))) {
@@ -74,5 +71,10 @@ public class LoginCustomers {
         grid.getChildren().addAll(nameLabel,nameInput,passLabel,passInput,loginButton,SelectScreenButton);
         Scene scene = new Scene(grid,w,h);
         return scene;
+    }
+
+    private static void handle(ActionEvent e) {
+        AplicatieFis.window.setScene(SelectionScreen.draw());
+        AplicatieFis.window.setTitle("Selection Screen");
     }
 }
