@@ -6,6 +6,7 @@ public class MovieObject {
     private String descriptionShort;
     private String genre;
     private int minutes;
+    private int cantitateOcupata;
     //private Image picture;
     public MovieObject()
     {
@@ -55,6 +56,22 @@ public class MovieObject {
 
     public void setMinutes(int minutes) {
         this.minutes = minutes;
+    }
+
+
+
+    public int getCantitateOcupata() {
+        return cantitateOcupata;
+    }
+
+    public void setCantitateOcupata(int cantitate) {
+        this.cantitateOcupata = cantitate;
+    }
+
+    public int count(int ceva)
+    {
+        this.cantitateOcupata=this.cantitateOcupata+ceva;
+        return this.cantitateOcupata;
     }
 
    /* public Image getPicture() {

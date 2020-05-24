@@ -105,11 +105,17 @@ public class MovieListView {
         addButton.setOnAction(e -> addButtonClicked());
         Button deleteButton = new Button("Delete");
         deleteButton.setOnAction(e -> deleteButtonClicked());
+        Button backButton=new Button("Back");
+        backButton.setOnAction(e -> {
+            AplicatieFis.window.setScene(AdminOverview.draw());
+            AplicatieFis.window.setTitle("Admin Overview");
+            table.getItems().clear();
+        });
 
         HBox hBox = new HBox();
         hBox.setPadding(new Insets(10,10,10,10));
         hBox.setSpacing(10);
-        hBox.getChildren().addAll(nameInput, directorInput, descriptionInput, genreInput, minutesInput, addButton, deleteButton);
+        hBox.getChildren().addAll(nameInput, directorInput, descriptionInput, genreInput, minutesInput, addButton, deleteButton,backButton);
 
         VBox vBox = new VBox();
         vBox.getChildren().addAll(table,hBox);

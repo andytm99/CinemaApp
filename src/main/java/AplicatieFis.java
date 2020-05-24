@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class AplicatieFis extends Application  {
-    public static Stage window;
+    protected static Stage window;
     public static void main(String[] args) {
         launch(args);
     }
