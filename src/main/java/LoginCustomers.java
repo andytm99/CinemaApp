@@ -59,8 +59,9 @@ public class LoginCustomers {
                     }
                     if (ok == 1) {
 
-                            AplicatieFis.window.setScene(SelectionScreen.draw());
+                            AplicatieFis.window.setScene(CustomerOverview.draw());
                             AplicatieFis.window.setTitle("Customer Overview");
+                            ok=0;
                     } else {
                         Alert.display("EROARE","Username sau parola gresita!");
 

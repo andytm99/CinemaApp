@@ -14,15 +14,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import sun.security.krb5.internal.Ticket;
 
 import java.io.File;
 import java.io.IOException;
 
-public class MovieListView {
+public class CustomerCinema1View {
     private static TableView<MovieObject> table;
-    private static TextField nameInput, directorInput, descriptionInput,genreInput,minutesInput;
+    private static TableView<TicketObject> tichete;
+    private static TextField nameInput, quantityInput;
     private static MovieObject[]  Movies=null;
+    private static TicketObject[] Tickets=null;
     private static ObservableList<MovieObject> Mov = FXCollections.observableArrayList();   //Mov e vectorul de filme
+    private static ObservableList<TicketObject> Tick = FXCollections.observableArrayList();   //vectorul de tichete
     //Get all of the products from json
     public static ObservableList<MovieObject> getMovieObject(){
         File file = new File("data/Movies.json");
@@ -36,9 +40,27 @@ public class MovieListView {
 
         for (MovieObject x : Movies) {
             Mov.add(x);
-            }
+        }
 
         return Mov;
+    }
+
+
+    public static ObservableList<TicketObject> getTicketObject(){
+        File fileT = new File("data/CinemaAdmin1Tickets.json");
+        ObjectMapper objectMapper=new ObjectMapper();
+
+        try {
+            Tickets = objectMapper.readValue(fileT, TicketObject[].class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        for (TicketObject x : Tickets) {
+            Tick.add(x);
+        }
+
+        return Tick;
     }
 
 
@@ -46,7 +68,7 @@ public class MovieListView {
 
     public static Scene draw()
     {
-        AplicatieFis.window.setTitle("Movie List");
+        AplicatieFis.window.setTitle("Movie List Cinema1");
 
         //Movie name column
         TableColumn<MovieObject, String> nameColumn = new TableColumn<>("Movie Name");
@@ -77,45 +99,69 @@ public class MovieListView {
         table.setItems(getMovieObject());
         table.getColumns().addAll(nameColumn, directorColumn, descriptionColumn, genreColumn, minutesColumn);
 
-        //pt adaugare VV
+        //Client name column
+        TableColumn<TicketObject, String> nameClientColumn = new TableColumn<>("Client Name");
+        nameClientColumn.setMinWidth(150);
+        nameClientColumn.setCellValueFactory(new PropertyValueFactory<>("numeClient"));
 
-        //Name input
+        //Quantity column
+        TableColumn<TicketObject, String> quantityColumn = new TableColumn<>("Quantity");
+        quantityColumn.setMinWidth(150);
+        quantityColumn.setCellValueFactory(new PropertyValueFactory<>("cantitate"));
+
+        tichete = new TableView<>();
+        tichete.setItems(getTicketObject());
+        tichete.getColumns().addAll(nameClientColumn,quantityColumn);
+
+
+        //Movie Name input
         nameInput = new TextField();
-        nameInput.setPromptText("Movie name");
+        nameInput.setPromptText("Client name");
         nameInput.setMinWidth(100);
 
-        //Director input
-        directorInput = new TextField();
-        directorInput.setPromptText("Directed by");
+        //Quantity input
+        quantityInput = new TextField();
+        quantityInput.setPromptText("Quantity");
 
-        //Description input
-        descriptionInput = new TextField();
-        descriptionInput.setPromptText("Description");
-
-        //Genre input
-        genreInput = new TextField();
-        genreInput.setPromptText("Genre");
-
-        //Minutes input
-        minutesInput = new TextField();
-        minutesInput.setPromptText("Minutes");
 
         //Button
-        Button addButton = new Button("Add");
-        addButton.setOnAction(e -> addButtonClicked());
-        Button deleteButton = new Button("Delete");
-        deleteButton.setOnAction(e -> deleteButtonClicked());
         Button backButton=new Button("Back");
         backButton.setOnAction(e -> {
-            AplicatieFis.window.setScene(AdminOverview.draw());
-            AplicatieFis.window.setTitle("Admin Overview");
+            AplicatieFis.window.setScene(CinemaListView.draw());
+            AplicatieFis.window.setTitle("Cinema List");
             table.getItems().clear();
+        });
+        Button buyButton=new Button("Buy");
+        buyButton.setOnAction(e->{
+            TicketObject t = new TicketObject(); //m este un obiect de tip TicketObject
+            t.setNumeClient(nameInput.getText());
+            t.setCantitate(Integer.parseInt(quantityInput.getText()));
+            MovieObject filmulet=(MovieObject) table.getSelectionModel().getSelectedItem();
+            filmulet.count(Integer.parseInt(quantityInput.getText()));
+            t.setFilm(filmulet);
+            if(filmulet.getCantitateOcupata()>100)
+            {
+                Alert.display("EROARE","Nu mai sunt locuri la acest film!");
+            }
+            else {
+                tichete.getItems().add(t);
+                File file = new File("data/CinemaAdmin1Tickets.json");
+                ObjectMapper objectMapper = new ObjectMapper();
+                try {
+                    objectMapper.writeValue(file, tichete.getItems());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            }
+            nameInput.clear();
+            quantityInput.clear();
+
         });
 
         HBox hBox = new HBox();
         hBox.setPadding(new Insets(10,10,10,10));
         hBox.setSpacing(10);
-        hBox.getChildren().addAll(nameInput, directorInput, descriptionInput, genreInput, minutesInput, addButton, deleteButton,backButton);
+        hBox.getChildren().addAll(nameInput,quantityInput, buyButton, backButton);
 
         VBox vBox = new VBox();
         vBox.getChildren().addAll(table,hBox);
@@ -126,43 +172,8 @@ public class MovieListView {
         return scene;
     }
 
-    //Add button clicked
-    public static void addButtonClicked()  {
-        MovieObject m = new MovieObject(); //m este un obiect de tip MovieObject
-        m.setMovieName(nameInput.getText());
-        m.setDirectorName(directorInput.getText());
-        m.setDescriptionShort(descriptionInput.getText());
-        m.setGenre(genreInput.getText());
-        m.setMinutes(Integer.parseInt(minutesInput.getText()));
 
-        table.getItems().add(m);
-        File file = new File("data/Movies.json");
-        ObjectMapper objectMapper=new ObjectMapper();
-        try {
-        objectMapper.writeValue(file, table.getItems());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        nameInput.clear();
-        directorInput.clear();
-        descriptionInput.clear();
-        genreInput.clear();
-        minutesInput.clear();
-    }
 
-    //Delete button clicked
-    public static void deleteButtonClicked(){
-        ObservableList<MovieObject> movieSelected, allMovies;
-        allMovies = table.getItems();
-        movieSelected = table.getSelectionModel().getSelectedItems();
-        movieSelected.forEach(allMovies::remove);
-        File file = new File("data/Movies.json");
-        ObjectMapper objectMapper=new ObjectMapper();
-        try {
-            objectMapper.writeValue(file, table.getItems());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 
 }

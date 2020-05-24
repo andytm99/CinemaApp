@@ -60,11 +60,20 @@ public class LoginManagers {
                 }
 
             }
-            if (ok == 1) {
+            if (ok == 1&& (nameInput.getText().equals("admin1"))) {
 
                 AplicatieFis.window.setScene(AdminOverview.draw());
                 AplicatieFis.window.setTitle("Admin Overview");
-            } else {
+                ok=0;
+            }
+            else
+                if(ok == 1&& (nameInput.getText().equals("admin2")))
+                {
+                    AplicatieFis.window.setScene(AdminOverview2.draw());
+                    AplicatieFis.window.setTitle("Admin2 Overview");
+                    ok=0;
+                }
+            else {
                 Alert.display("EROARE","Username sau parola gresita!");
 
             }

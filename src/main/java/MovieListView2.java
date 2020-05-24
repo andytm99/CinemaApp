@@ -18,14 +18,14 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 
-public class MovieListView {
+public class MovieListView2 {
     private static TableView<MovieObject> table;
     private static TextField nameInput, directorInput, descriptionInput,genreInput,minutesInput;
     private static MovieObject[]  Movies=null;
     private static ObservableList<MovieObject> Mov = FXCollections.observableArrayList();   //Mov e vectorul de filme
     //Get all of the products from json
     public static ObservableList<MovieObject> getMovieObject(){
-        File file = new File("data/Movies.json");
+        File file = new File("data/admin2Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {
@@ -36,7 +36,7 @@ public class MovieListView {
 
         for (MovieObject x : Movies) {
             Mov.add(x);
-            }
+        }
 
         return Mov;
     }
@@ -136,10 +136,10 @@ public class MovieListView {
         m.setMinutes(Integer.parseInt(minutesInput.getText()));
 
         table.getItems().add(m);
-        File file = new File("data/Movies.json");
+        File file = new File("data/admin2Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
         try {
-        objectMapper.writeValue(file, table.getItems());
+            objectMapper.writeValue(file, table.getItems());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -156,7 +156,7 @@ public class MovieListView {
         allMovies = table.getItems();
         movieSelected = table.getSelectionModel().getSelectedItems();
         movieSelected.forEach(allMovies::remove);
-        File file = new File("data/Movies.json");
+        File file = new File("data/admin2Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
         try {
             objectMapper.writeValue(file, table.getItems());

@@ -4,7 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class AdminOverview {
+public class AdminOverview2 {
 
     Stage window=new Stage();
     public static Scene draw()
@@ -32,7 +32,7 @@ public class AdminOverview {
         });
 
         MovieListButton.setOnAction(e -> {
-            AplicatieFis.window.setScene(MovieListView.draw());
+            AplicatieFis.window.setScene(MovieListView2.draw());
             AplicatieFis.window.setTitle("Movie List");
         });
 
