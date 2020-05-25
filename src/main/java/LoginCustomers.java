@@ -7,12 +7,19 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class LoginCustomers {
     private static int ok=0;
      static JsonCustomer[]  Custom=null;
+     //private static final Path CustoPATH = Paths.get(System.getProperty("user.dir").toString()+"\\data\\Customers");
+
     public static Scene draw()
     {
         int w = 350, h = 250;
@@ -35,11 +42,12 @@ public class LoginCustomers {
         passInput.setPromptText("password");
         GridPane.setConstraints(passInput,1,1);
 
-        File file = new File("data/Customers.json");
+        File file = new File("C:\\Users\\Andreas\\Desktop\\proiect\\data\\Customers.JSON");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {
             Custom = objectMapper.readValue(file, JsonCustomer[].class);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -51,6 +59,7 @@ public class LoginCustomers {
         GridPane.setConstraints(SelectScreenButton,1,3);
         SelectScreenButton.setOnAction(LoginCustomers::handle);
         loginButton.setOnAction(e -> {
+
                     for (JsonCustomer x : Custom) {
                         if ((x.getUsername().equals(nameInput.getText())) && (x.getPassword().equals(passInput.getText()))) {
                             ok = 1;
