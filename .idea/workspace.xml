@@ -2,32 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790dc450-33e4-48b0-86b2-a18c5d879a34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/Tickets.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CinemaAdmin1Tickets.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CinemaAdmin2Tickets.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Managers.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Movies.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Tickets.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/admin2Movies.JSON" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/CinemaAdmin1Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/data/CinemaAdmin1Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/CinemaAdmin2Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/data/CinemaAdmin2Tickets.JSON" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Movies.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/data/Movies.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/admin2Movies.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/data/admin2Movies.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AdminOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminOverview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AdminOverview2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminOverview2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AplicatieFis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AplicatieFis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CinemaListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CinemaListView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CustomerCinema1View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerCinema1View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CustomerCinema2View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerCinema2View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CustomerOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerOverview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LoginManagers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginManagers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MovieListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MovieListView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MovieListView2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MovieListView2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MovieObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MovieObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TicketObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicketObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdminOverview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminOverview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AplicatieFis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AplicatieFis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CustomerOverview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CustomerOverview.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProiectFis-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProiectFis-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CustomerCinema1View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CustomerCinema1View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CustomerCinema2View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CustomerCinema2View.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/LoginCustomers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginCustomers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/LoginManagers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginManagers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MovieListView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MovieListView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MovieObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MovieObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MovieListView2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MovieListView2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/program.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/program.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +64,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CinemaApp-master" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andreas\Desktop\proiect\data" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Andreas\Desktop\proiect\data" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andreas\Desktop\proiect" />
+      <recent name="C:\Users\Andreas\Desktop\proiect\src\main\resources" />
+      <recent name="C:\Users\Andreas\Desktop\proiect\target\classes" />
     </key>
   </component>
   <component name="RunManager">
@@ -121,7 +122,11 @@
       <workItem from="1590239877063" duration="8925000" />
       <workItem from="1590250675784" duration="122000" />
       <workItem from="1590265671567" duration="577000" />
-      <workItem from="1590299577182" duration="18419000" />
+      <workItem from="1590299577182" duration="18636000" />
+      <workItem from="1590390556648" duration="1177000" />
+      <workItem from="1590391802452" duration="7873000" />
+      <workItem from="1590403162201" duration="1533000" />
+      <workItem from="1590405278558" duration="1709000" />
     </task>
     <servers />
   </component>
@@ -132,10 +137,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="60" key="#Project_Structure" timestamp="1589379288353">
+    <state x="455" y="60" key="#Project_Structure" timestamp="1590398496853">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="455" y="60" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1589379288353" />
+    <state x="455" y="60" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1590398496853" />
     <state x="514" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590164294194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -148,42 +153,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1590148045089" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590395103782">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590395103782" />
     <state x="549" y="215" key="FileChooserDialogImpl" timestamp="1590250696457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="215" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590250696457" />
-    <state width="1493" height="158" key="GridCell.Tab.0.bottom" timestamp="1590333424005">
+    <state width="1493" height="158" key="GridCell.Tab.0.bottom" timestamp="1590407066059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590333424005" />
-    <state width="1493" height="158" key="GridCell.Tab.0.center" timestamp="1590333424005">
+    <state width="1493" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590407066059" />
+    <state width="1493" height="158" key="GridCell.Tab.0.center" timestamp="1590407066059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590333424005" />
-    <state width="1493" height="158" key="GridCell.Tab.0.left" timestamp="1590333424004">
+    <state width="1493" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590407066059" />
+    <state width="1493" height="158" key="GridCell.Tab.0.left" timestamp="1590407066058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590333424004" />
-    <state width="1493" height="158" key="GridCell.Tab.0.right" timestamp="1590333424005">
+    <state width="1493" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590407066058" />
+    <state width="1493" height="158" key="GridCell.Tab.0.right" timestamp="1590407066059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590333424005" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590303451817">
+    <state width="1493" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590407066059" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590406825942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590303451817" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590303451817">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590406825942" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590406825942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590303451817" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590303451817">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590406825942" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590406825942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590303451817" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590303451817">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590406825942" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590406825942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590303451817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590406825942" />
     <state x="582" y="123" key="RollbackChangesDialog" timestamp="1589386222641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,10 +201,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="260" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589526413846" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590299591439">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590405299765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590299591438" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590405299765" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1590326384060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -45,7 +45,7 @@ public class LoginManagers {
             AplicatieFis.window.setTitle("Selection Screen");
         });
 
-        File file = new File("data/Managers.json");
+        File file = new File(System.getProperty("user.dir")+"\\Managers.JSON");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {

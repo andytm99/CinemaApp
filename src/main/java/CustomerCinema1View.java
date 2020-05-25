@@ -29,7 +29,7 @@ public class CustomerCinema1View {
     private static ObservableList<TicketObject> Tick = FXCollections.observableArrayList();   //vectorul de tichete
     //Get all of the products from json
     public static ObservableList<MovieObject> getMovieObject(){
-        File file = new File("data/Movies.json");
+        File file = new File(System.getProperty("user.dir")+"\\Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {
@@ -47,7 +47,7 @@ public class CustomerCinema1View {
 
 
     public static ObservableList<TicketObject> getTicketObject(){
-        File fileT = new File("data/CinemaAdmin1Tickets.json");
+        File fileT = new File(System.getProperty("user.dir")+"\\CinemaAdmin1Tickets.json");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {
@@ -145,7 +145,7 @@ public class CustomerCinema1View {
             }
             else {
                 tichete.getItems().add(t);
-                File file = new File("data/CinemaAdmin1Tickets.json");
+                File file = new File(System.getProperty("user.dir")+"\\CinemaAdmin1Tickets.json");
                 ObjectMapper objectMapper = new ObjectMapper();
                 try {
                     objectMapper.writeValue(file, tichete.getItems());
