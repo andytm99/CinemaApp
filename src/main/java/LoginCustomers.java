@@ -42,7 +42,7 @@ public class LoginCustomers {
         passInput.setPromptText("password");
         GridPane.setConstraints(passInput,1,1);
 
-        File file = new File("C:\\Users\\Andreas\\Desktop\\proiect\\data\\Customers.JSON");
+        File file = new File(System.getProperty("user.dir")+"\\Customers.JSON");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {

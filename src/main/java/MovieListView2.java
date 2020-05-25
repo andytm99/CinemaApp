@@ -25,7 +25,7 @@ public class MovieListView2 {
     private static ObservableList<MovieObject> Mov = FXCollections.observableArrayList();   //Mov e vectorul de filme
     //Get all of the products from json
     public static ObservableList<MovieObject> getMovieObject(){
-        File file = new File("C:\\Users\\Andreas\\Desktop\\proiect\\data\\admin2Movies.json");
+        File file = new File(System.getProperty("user.dir")+"\\admin2Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
 
         try {
@@ -136,7 +136,7 @@ public class MovieListView2 {
         m.setMinutes(Integer.parseInt(minutesInput.getText()));
 
         table.getItems().add(m);
-        File file = new File("C:\\Users\\Andreas\\Desktop\\proiect\\data\\admin2Movies.json");
+        File file = new File(System.getProperty("user.dir")+"\\admin2Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
         try {
             objectMapper.writeValue(file, table.getItems());
@@ -156,7 +156,7 @@ public class MovieListView2 {
         allMovies = table.getItems();
         movieSelected = table.getSelectionModel().getSelectedItems();
         movieSelected.forEach(allMovies::remove);
-        File file = new File("C:\\Users\\Andreas\\Desktop\\proiect\\data\\admin2Movies.json");
+        File file = new File(System.getProperty("user.dir")+"\\admin2Movies.json");
         ObjectMapper objectMapper=new ObjectMapper();
         try {
             objectMapper.writeValue(file, table.getItems());
