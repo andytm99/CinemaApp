@@ -21,7 +21,7 @@ public class Cinema1TicketsView {
     public static ObservableList<TicketObject> getTicketObject(){
         File fileT = new File(System.getProperty("user.dir")+"\\CinemaAdmin1Tickets.json");
         ObjectMapper objectMapper=new ObjectMapper();
-
+//mesaj
         try {
             Tickets = objectMapper.readValue(fileT, TicketObject[].class);
         } catch (IOException e) {
