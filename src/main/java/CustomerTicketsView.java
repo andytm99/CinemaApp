@@ -76,7 +76,7 @@ public class CustomerTicketsView {
         Button backButton=new Button("Back");
         backButton.setOnAction(e -> {
             AplicatieFis.window.setScene(CustomerOverview.draw());
-            AplicatieFis.window.setTitle("Cinema List");
+            AplicatieFis.window.setTitle("Customer Overview");
             tichete.getItems().clear();
         });
 

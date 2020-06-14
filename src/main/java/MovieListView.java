@@ -14,6 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -133,21 +134,26 @@ public class MovieListView {
         m.setDirectorName(directorInput.getText());
         m.setDescriptionShort(descriptionInput.getText());
         m.setGenre(genreInput.getText());
-        m.setMinutes(Integer.parseInt(minutesInput.getText()));
-
-        table.getItems().add(m);
-        File file = new File(System.getProperty("user.dir")+"\\Movies.json");
-        ObjectMapper objectMapper=new ObjectMapper();
-        try {
-        objectMapper.writeValue(file, table.getItems());
-        } catch (IOException e) {
-            e.printStackTrace();
+        String numar=new String();
+        numar=minutesInput.getText();
+        if(NumberUtils.isDigits(numar)) {
+            m.setMinutes(Integer.parseInt(minutesInput.getText()));
+            table.getItems().add(m);
+            File file = new File(System.getProperty("user.dir")+"\\Movies.json");
+            ObjectMapper objectMapper=new ObjectMapper();
+            try {
+                objectMapper.writeValue(file, table.getItems());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            nameInput.clear();
+            directorInput.clear();
+            descriptionInput.clear();
+            genreInput.clear();
+            minutesInput.clear();
         }
-        nameInput.clear();
-        directorInput.clear();
-        descriptionInput.clear();
-        genreInput.clear();
-        minutesInput.clear();
+        else
+            Alert.display("Eroare", "Nu ati introdus un numar valid!");
     }
 
     //Delete button clicked
@@ -164,5 +170,4 @@ public class MovieListView {
             e.printStackTrace();
         }
     }
-
 }

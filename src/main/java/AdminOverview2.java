@@ -45,6 +45,4 @@ public class AdminOverview2 {
         Scene scene = new Scene(grid,w,h);
         return scene;
     }
-
-
 }
