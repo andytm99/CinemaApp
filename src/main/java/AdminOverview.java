@@ -36,7 +36,10 @@ public class AdminOverview {
             AplicatieFis.window.setTitle("Movie List");
         });
 
-
+        TicketsButton.setOnAction(e -> {
+            AplicatieFis.window.setScene(Cinema1TicketsView.draw());
+            AplicatieFis.window.setTitle("Ticket List");
+        });
 
         grid.getChildren().addAll(MovieListButton,TicketsButton,backButton);
         Scene scene = new Scene(grid,w,h);

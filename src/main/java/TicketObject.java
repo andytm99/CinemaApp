@@ -2,7 +2,7 @@ public class TicketObject {
     private String numeClient;
     private int cantitate;
     private MovieObject film;
-
+    private String numeFilm;
 
 
     public String getNumeClient() {
@@ -27,5 +27,13 @@ public class TicketObject {
 
     public void setFilm(MovieObject film) {
         this.film = film;
+    }
+
+    public String getNumeFilm() {
+        return numeFilm;
+    }
+
+    public void setNumeFilm(String numeFilm) {
+        this.numeFilm = numeFilm;
     }
 }

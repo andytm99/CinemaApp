@@ -41,9 +41,6 @@ public class MovieListView2 {
         return Mov;
     }
 
-
-
-
     public static Scene draw()
     {
         AplicatieFis.window.setTitle("Movie List");

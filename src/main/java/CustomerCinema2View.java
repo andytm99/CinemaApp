@@ -139,6 +139,7 @@ public class CustomerCinema2View {
             MovieObject filmulet=(MovieObject) table.getSelectionModel().getSelectedItem();
             filmulet.count(Integer.parseInt(quantityInput.getText()));
             t.setFilm(filmulet);
+            t.setNumeFilm(filmulet.getMovieName());
             if(filmulet.getCantitateOcupata()>100)
             {
                 Alert.display("EROARE","Nu mai sunt locuri la acest film!");

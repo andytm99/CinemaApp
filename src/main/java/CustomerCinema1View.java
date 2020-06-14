@@ -6,10 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -99,6 +96,7 @@ public class CustomerCinema1View {
         table.setItems(getMovieObject());
         table.getColumns().addAll(nameColumn, directorColumn, descriptionColumn, genreColumn, minutesColumn);
 
+
         //Client name column
         TableColumn<TicketObject, String> nameClientColumn = new TableColumn<>("Client Name");
         nameClientColumn.setMinWidth(150);
@@ -139,6 +137,7 @@ public class CustomerCinema1View {
             MovieObject filmulet=(MovieObject) table.getSelectionModel().getSelectedItem();
             filmulet.count(Integer.parseInt(quantityInput.getText()));
             t.setFilm(filmulet);
+            t.setNumeFilm(filmulet.getMovieName());
             if(filmulet.getCantitateOcupata()>100)
             {
                 Alert.display("EROARE","Nu mai sunt locuri la acest film!");

@@ -1,1 +1,3 @@
-[{"movieName":"Reservoir dogs","directorName":"Quentin Tarantino","descriptionShort":"Mafia movie","genre":"Crime","minutes":99}]
+[
+  {"movieName":"Reservoir dogs","directorName":"Quentin Tarantino","descriptionShort":"Mafia movie","genre":"Crime","minutes":99}
+]
