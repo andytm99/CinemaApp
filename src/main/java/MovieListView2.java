@@ -105,7 +105,7 @@ public class MovieListView2 {
         deleteButton.setOnAction(e -> deleteButtonClicked());
         Button backButton=new Button("Back");
         backButton.setOnAction(e -> {
-            AplicatieFis.window.setScene(AdminOverview.draw());
+            AplicatieFis.window.setScene(AdminOverview2.draw());
             AplicatieFis.window.setTitle("Admin Overview");
             table.getItems().clear();
         });
