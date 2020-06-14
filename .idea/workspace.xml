@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790dc450-33e4-48b0-86b2-a18c5d879a34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cinema1TicketsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cinema2TicketsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CustomerTicketsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CinemaAdmin1Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/CinemaAdmin1Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CinemaAdmin2Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/CinemaAdmin2Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AdminOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminOverview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AdminOverview2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminOverview2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CustomerCinema1View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerCinema1View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CustomerCinema2View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerCinema2View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CustomerOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerOverview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginCustomers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MovieListView2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MovieListView2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectionScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TicketObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicketObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CinemaAdmin1Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CinemaAdmin1Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CinemaAdmin2Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CinemaAdmin2Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Customers.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Customers.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Managers.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Managers.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Movies.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Movies.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/admin2Movies.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin2Movies.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdminOverview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminOverview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdminOverview2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminOverview2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CinemaAdmin1Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CinemaAdmin1Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CinemaAdmin2Tickets.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CinemaAdmin2Tickets.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CustomerCinema1View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CustomerCinema1View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CustomerOverview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CustomerOverview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Customers.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Customers.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginCustomers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginCustomers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Managers.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Managers.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MovieListView2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MovieListView2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Movies.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Movies.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SelectionScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SelectionScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/admin2Movies.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/admin2Movies.JSON" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
