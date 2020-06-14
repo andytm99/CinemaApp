@@ -36,7 +36,10 @@ public class CustomerOverview {
             AplicatieFis.window.setTitle("Cinema List");
         });
 
-
+        TicketsButton.setOnAction(e -> {
+            AplicatieFis.window.setScene(CustomerTicketsView.draw());
+            AplicatieFis.window.setTitle("Tickets bought");
+        });
 
         grid.getChildren().addAll(CinemaListButton,TicketsButton,backButton);
         Scene scene = new Scene(grid,w,h);

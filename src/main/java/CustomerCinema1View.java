@@ -6,14 +6,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.apache.commons.lang3.math.NumberUtils;
 import sun.security.krb5.internal.Ticket;
 
 import java.io.File;
@@ -64,8 +62,6 @@ public class CustomerCinema1View {
     }
 
 
-
-
     public static Scene draw()
     {
         AplicatieFis.window.setTitle("Movie List Cinema1");
@@ -113,7 +109,6 @@ public class CustomerCinema1View {
         tichete.setItems(getTicketObject());
         tichete.getColumns().addAll(nameClientColumn,quantityColumn);
 
-
         //Movie Name input
         nameInput = new TextField();
         nameInput.setPromptText("Client name");
@@ -123,7 +118,6 @@ public class CustomerCinema1View {
         quantityInput = new TextField();
         quantityInput.setPromptText("Quantity");
 
-
         //Button
         Button backButton=new Button("Back");
         backButton.setOnAction(e -> {
@@ -131,19 +125,21 @@ public class CustomerCinema1View {
             AplicatieFis.window.setTitle("Cinema List");
             table.getItems().clear();
         });
+
+
         Button buyButton=new Button("Buy");
         buyButton.setOnAction(e->{
             TicketObject t = new TicketObject(); //m este un obiect de tip TicketObject
-            t.setNumeClient(nameInput.getText());
-            t.setCantitate(Integer.parseInt(quantityInput.getText()));
             MovieObject filmulet=(MovieObject) table.getSelectionModel().getSelectedItem();
-            filmulet.count(Integer.parseInt(quantityInput.getText()));
             t.setFilm(filmulet);
-            if(filmulet.getCantitateOcupata()>100)
-            {
-                Alert.display("EROARE","Nu mai sunt locuri la acest film!");
-            }
-            else {
+            t.setNumeFilm(filmulet.getMovieName());
+            t.setNumeClient(LoginCustomers.getNumeCustomers());
+            String numar=new String();
+            numar=quantityInput.getText();
+
+            if ((NumberUtils.isDigits(numar)) && (Integer.parseInt(quantityInput.getText())<=100)){
+                t.setCantitate(Integer.parseInt(quantityInput.getText()));
+                filmulet.count(Integer.parseInt(quantityInput.getText()));
                 tichete.getItems().add(t);
                 File file = new File(System.getProperty("user.dir")+"\\CinemaAdmin1Tickets.json");
                 ObjectMapper objectMapper = new ObjectMapper();
@@ -153,7 +149,10 @@ public class CustomerCinema1View {
                     ex.printStackTrace();
                 }
             }
-            nameInput.clear();
+            else {
+                Alert.display("EROARE","Nu ati introdus un numar valid sau nu mai sunt locuri disponibile");
+            }
+            //nameInput.clear();
             quantityInput.clear();
 
         });
@@ -161,7 +160,7 @@ public class CustomerCinema1View {
         HBox hBox = new HBox();
         hBox.setPadding(new Insets(10,10,10,10));
         hBox.setSpacing(10);
-        hBox.getChildren().addAll(nameInput,quantityInput, buyButton, backButton);
+        hBox.getChildren().addAll(/*nameInput,*/quantityInput, buyButton, backButton);
 
         VBox vBox = new VBox();
         vBox.getChildren().addAll(table,hBox);
@@ -171,9 +170,4 @@ public class CustomerCinema1View {
 
         return scene;
     }
-
-
-
-
-
 }

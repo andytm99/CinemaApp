@@ -17,6 +17,7 @@ import java.nio.file.Paths;
 
 public class LoginCustomers {
     private static int ok=0;
+    private static String numeCustomer;
      static JsonCustomer[]  Custom=null;
      //private static final Path CustoPATH = Paths.get(System.getProperty("user.dir").toString()+"\\data\\Customers");
 
@@ -63,11 +64,13 @@ public class LoginCustomers {
                     for (JsonCustomer x : Custom) {
                         if ((x.getUsername().equals(nameInput.getText())) && (x.getPassword().equals(passInput.getText()))) {
                             ok = 1;
+
                         }
 
                     }
                     if (ok == 1) {
 
+                            numeCustomer=nameInput.getText();
                             AplicatieFis.window.setScene(CustomerOverview.draw());
                             AplicatieFis.window.setTitle("Customer Overview");
                             ok=0;
@@ -81,6 +84,11 @@ public class LoginCustomers {
         grid.getChildren().addAll(nameLabel,nameInput,passLabel,passInput,loginButton,SelectScreenButton);
         Scene scene = new Scene(grid,w,h);
         return scene;
+    }
+
+    public static String getNumeCustomers()
+    {
+        return numeCustomer;
     }
 
     private static void handle(ActionEvent e) {
