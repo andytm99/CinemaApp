@@ -84,6 +84,30 @@
                         </execution>
                     </executions>
                 </plugin>
+                 <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <echo>Using env.test.properties</echo>
+                                <copy file="Customers.JSON" tofile="${basedir}/target/Customers.JSON"/>
+                                <copy file="admin2Movies.JSON" tofile="${basedir}/target/admin2Movies.JSON"/>
+                                <copy file="Movies.JSON" tofile="${basedir}/target/Movies.JSON"/>
+                                <copy file="CinemaAdmin2Tickets.JSON" tofile="${basedir}/target/CinemaAdmin2Tickets.JSON"/>
+                                <copy file="CinemaAdmin1Tickets.JSON" tofile="${basedir}/target/CinemaAdmin1Tickets.JSON"/>
+                                <copy file="Managers.JSON" tofile="${basedir}/target/Managers.JSON"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
         </plugins>
     </build>
