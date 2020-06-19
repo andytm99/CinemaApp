@@ -55,7 +55,7 @@ public class LoginManagers {
         }
         loginButton.setOnAction(e -> {
             for (JsonCustomer x : Admin) {
-                if ((x.getUsername().equals(nameInput.getText())) && (x.getPassword().equals(passInput.getText()))) {
+                if ((x.getUsername().equals(nameInput.getText())) && (x.getPassword().equals(Integer.toString(passInput.getText().hashCode())))) {
                     ok = 1;
                 }
 

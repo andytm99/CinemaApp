@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Using env.test.properties</echo>
+  <copy file="Customers.JSON" tofile="C:\Users\Andreas\Desktop\cinema\CinemaApp/target/Customers.JSON"/>
+  <copy file="admin2Movies.JSON" tofile="C:\Users\Andreas\Desktop\cinema\CinemaApp/target/admin2Movies.JSON"/>
+  <copy file="Movies.JSON" tofile="C:\Users\Andreas\Desktop\cinema\CinemaApp/target/Movies.JSON"/>
+  <copy file="CinemaAdmin2Tickets.JSON" tofile="C:\Users\Andreas\Desktop\cinema\CinemaApp/target/CinemaAdmin2Tickets.JSON"/>
+  <copy file="CinemaAdmin1Tickets.JSON" tofile="C:\Users\Andreas\Desktop\cinema\CinemaApp/target/CinemaAdmin1Tickets.JSON"/>
+  <copy file="Managers.JSON" tofile="C:\Users\Andreas\Desktop\cinema\CinemaApp/target/Managers.JSON"/>
+</target>
+</project>
